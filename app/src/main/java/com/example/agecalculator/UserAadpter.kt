@@ -27,12 +27,13 @@ class UserAadpter(var listUser: MutableList<User>) : RecyclerView.Adapter<UserAa
             itemView.default_date.text=currentDate()
 
         }
+        // function for getting current date
         private fun currentDate():String{
             val simpleDateFormat = SimpleDateFormat("dd.MM.yyyy")
             val currentDateAndTime: String = simpleDateFormat.format(Date())
             return currentDateAndTime
         }
-
+            //function for age calculation
         private fun calcAge(input: String): String {
             val year = input.toInt()
             val currentYear = Calendar.getInstance().get(Calendar.YEAR)

@@ -27,8 +27,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Person: "
-                android:textAppearance="?attr/textAppearanceHeadline6"
-                />
+                android:textAppearance="?attr/textAppearanceHeadline6" />
+
             <TextView
                 android:id="@+id/personsr_no"
                 android:layout_width="wrap_content"
@@ -45,6 +45,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:orientation="horizontal">
+
             <EditText
                 android:id="@+id/dob"
                 android:layout_width="wrap_content"
@@ -52,20 +53,22 @@
                 android:hint="Date Of Birth"
 
                 />
+
             <TextView
                 android:id="@+id/default_date"
+                style="?attr/borderlessButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Today's Date"
-                style="?attr/borderlessButtonStyle"
-                />
+                android:text="Today's Date" />
+
             <Button
                 android:id="@+id/btn_cal"
-                android:text="calculate"
-                android:textSize="@dimen/_8ssp"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+                android:layout_height="match_parent"
+                android:text="calculate"
+                android:textSize="@dimen/_8ssp" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -77,15 +80,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Your age is : "
-                android:textSize="@dimen/_14ssp"
-                />
+                android:textSize="@dimen/_14ssp" />
+
             <TextView
                 android:id="@+id/txt_age"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="1"
-                android:textStyle="bold"
                 android:textSize="@dimen/_14ssp"
+                android:textStyle="bold"
 
                 />
 
